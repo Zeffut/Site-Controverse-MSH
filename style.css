@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Désactive le curseur par défaut sur tout le document */
+html, body * {
+    cursor: none !important;
+}
+
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+/* Curseur personnalisé */
+.custom-cursor {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
+
+/* Effet de survol sur les liens */
+a:hover ~ .custom-cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+section.header {
+    width: 100%;
+    background-image: url('ressources/header.png');
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    width: auto;
+    justify-content: flex-end;
+}
+
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+div.header-content {
+    max-width: 520px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+div.header-content p {
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    color: #5E6282;
+}
+
+img.video {
+    width: 52px;
+    height: 52px;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', serif;
+    color: #5E6282;
+}
+
+h1.title {
+    font-family: 'Volkhov', serif;
+    font-size: 75px;
+    color: #181E4B;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+img.title-underline {
+    position: absolute;
+    top: 315px;
+    left: 250px;
+    width: 100%;
+    max-width: 520px;
+    display: block;
+    margin: 0;
+}
+
+a {
+    display: inline-block; /* Ajouté pour permettre le transform */
+    transition: transform 0.3s ease; /* Ajouté pour une transition fluide */
+    color: #181E4B;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Poppins', serif;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+h4 {
+    font-family: 'Poppins', serif;
+    color: #5E6282;
+}
+
+h1.section-title {
+    font-family: 'Volkhov', serif;
+    font-size: 50px;
+    color: #181E4B;
+}
+
+section.articles {
+    margin-top: 200px;
+    text-align: center;
+}
+
+a.article-card {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: 0.3s;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+}
+
+a.article-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+div.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.date {
+    display: flex;
+    color: #5E6282;
+    align-items: center;
+}
+
+div.date h6 {
+    font-size: 14px;
+    font-family: Poppins, serif;
+    font-weight: normal;
+}
+
+div.date img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+div.article-card {
+    width: 25%;
+    text-align: left;
+}
+
+h5.article-name {
+    font-family: 'Poppins', serif;
+    color: #5E6282;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+p.article-content {
+    font-family: 'Poppins', serif;
+    color: #5E6282;
+    font-size: 15px;
+}
