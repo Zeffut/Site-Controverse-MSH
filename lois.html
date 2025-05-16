@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lois sur la GPA - Site Controverse MSH</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        /* Style spécifique pour la page lois */
+        .law-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+
+        .law-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .law-section h2 {
+            font-family: 'Volkhov', serif;
+            color: #181E4B;
+            font-size: 32px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .law-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background: #FF715B;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .law-item {
+            display: block;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #FF715B;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .law-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .law-item h3 {
+            color: #181E4B;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .law-item p {
+            color: #5E6282;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .law-item .link-text {
+            color: #FF715B;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .law-item a:hover {
+            color: #e65c47;
+            transform: translateX(5px);
+        }
+
+        .law-item .link-text::after {
+            content: '→';
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .law-item:hover .link-text::after {
+            transform: translateX(5px);
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            color: #5E6282;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            color: #FF715B;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <section class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="lois.html">Lois</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1 class="title">Cadre Légal de la GPA</h1>
+        </div>
+    </section>
+
+    <div class="law-container">
+        <div class="law-section">
+            <h2>Législation Française</h2>
+            
+            <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006424624/" target="_blank" class="law-item">
+                <h3>Article 16-7 du Code civil</h3>
+                <p>Interdiction de la GPA en France</p>
+                <span class="link-text">Voir l'article complet</span>
+            </a>
+
+            <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044017345" target="_blank" class="law-item">
+                <h3>Loi de bioéthique de 2021</h3>
+                <p>Évolutions législatives concernant l'AMP et la GPA</p>
+                <span class="link-text">Consulter la loi</span>
+            </a>
+        </div>
+
+        <div class="law-section">
+            <h2>Législation Internationale</h2>
+            
+            <a href="https://rm.coe.int/168007cf98" target="_blank" class="law-item">
+                <h3>Convention d'Oviedo (1997)</h3>
+                <p>Convention sur les Droits de l'Homme et la biomédecine</p>
+                <span class="link-text">Accéder au document</span>
+            </a>
+
+            <a href="https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2013)512123" target="_blank" class="law-item">
+                <h3>Législation européenne sur la GPA</h3>
+                <p>Rapport du Parlement Européen sur les aspects éthiques et juridiques de la GPA</p>
+                <span class="link-text">Lire le rapport</span>
+            </a>
+        </div>
+
+        <div class="law-section">
+            <h2>Jurisprudence</h2>
+            
+            <a href="https://hudoc.echr.coe.int/fre#{"itemid":["001-145563"]}" target="_blank" class="law-item">
+                <h3>Arrêt Mennesson c. France (2014)</h3>
+                <p>Reconnaissance de la filiation des enfants nés de GPA à l'étranger</p>
+                <span class="link-text">Consulter l'arrêt</span>
+            </a>
+
+            <a href="https://www.courdecassation.fr/la_cour_42/actualite_2294/arrets_2300/arret_n_2301/arret_4_10_2019_18-11_219.html" target="_blank" class="law-item">
+                <h3>Arrêt de la Cour de cassation (2019)</h3>
+                <p>Transcription intégrale de l'acte de naissance étranger d'un enfant né de GPA</p>
+                <span class="link-text">Lire l'arrêt</span>
+            </a>
+        </div>
+
+        <div class="law-section">
+            <h2>Ressources complémentaires</h2>
+            
+            <a href="https://www.senat.fr/rap/r15-424/r15-4241.pdf" target="_blank" class="law-item">
+                <h3>Rapport du Sénat sur la GPA (2016)</h3>
+                <p>Étude d'impact des différentes législations européennes</p>
+                <span class="link-text">Télécharger le rapport</span>
+            </a>
+
+            <a href="https://www.conseil-etat.fr/ressources/etudes-publications/rapports-etudes/rapports/etudes-consacrees-a-des-questions-juridiques-concernant-les-sciences-de-la-vie/la-revision-des-lois-de-bioethique" target="_blank" class="law-item">
+                <h3>Conseil d'État - Avis sur la GPA (2009)</h3>
+                <p>Réflexions sur les enjeux éthiques et juridiques</p>
+                <span class="link-text">Consulter l'avis</span>
+            </a>
+        </div>
+
+        <a href="#" class="back-to-top">Retour en haut ↑</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Script pour le retour en haut de page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.back-to-top').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

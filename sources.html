@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources - Site Controverse MSH</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        /* Style spécifique pour la page sources */
+        .sources-container {
+            max-width: 1200px;
+            margin: 100px auto 50px;
+            padding: 0 20px;
+        }
+
+        .source-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .source-section h2 {
+            font-family: 'Volkhov', serif;
+            color: #181E4B;
+            font-size: 32px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .source-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 4px;
+            background: #FF715B;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .source-item {
+            display: block;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #FF715B;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .source-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .source-item h3 {
+            color: #181E4B;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .source-item p {
+            color: #5E6282;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .source-item .link-text {
+            color: #FF715B;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .source-item a:hover {
+            color: #e65c47;
+            transform: translateX(5px);
+        }
+
+        .source-item .link-text::after {
+            content: '→';
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .source-item:hover .link-text::after {
+            transform: translateX(5px);
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            color: #5E6282;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            color: #FF715B;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <section class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="sources.html">Sources</a></li>
+                <li><a href="lois.html">Lois</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1 class="title">Sources et Références</h1>
+        </div>
+    </section>
+
+    <div class="sources-container">
+        <div class="source-section">
+            <h2>Articles de Presse</h2>
+            
+            <a href="https://www.lemonde.fr/societe/article/2024/10/17/l-italie-etend-l-interdiction-de-la-gestation-pour-autrui-aux-couples-qui-y-ont-recours-a-l-etranger_6353957_3224.html" target="_blank" class="source-item">
+                <h3>Le Monde</h3>
+                <p>L'Italie étend l'interdiction de la GPA aux couples qui y ont recours à l'étranger (17/10/2024)</p>
+                <span class="link-text">Lire l'article</span>
+            </a>
+
+            <a href="https://www.lefigaro.fr/actualite-france/la-cour-de-cassation-ouvre-la-porte-a-la-gpa-20241119" target="_blank" class="source-item">
+                <h3>Le Figaro</h3>
+                <p>La Cour de cassation ouvre la porte à la GPA (19/11/2024)</p>
+                <span class="link-text">Lire l'article</span>
+            </a>
+
+            <a href="https://www.liberation.fr/idees-et-debats/tribunes/vers-une-gpa-responsable-grace-a-leurope-20240508_QVJ2HDUM2BCPNIRM7TJ3TBHWGA/" target="_blank" class="source-item">
+                <h3>Libération</h3>
+                <p>Vers une GPA responsable grâce à l'Europe (08/05/2024)</p>
+                <span class="link-text">Lire l'article</span>
+            </a>
+        </div>
+
+        <div class="source-section">
+            <h2>Rapports et Études</h2>
+            
+            <a href="https://www.senat.fr/rap/r15-424/r15-4241.pdf" target="_blank" class="source-item">
+                <h3>Rapport du Sénat (2016)</h3>
+                <p>Étude d'impact des différentes législations européennes sur la GPA</p>
+                <span class="link-text">Télécharger le rapport</span>
+            </a>
+
+            <a href="https://www.conseil-etat.fr/ressources/etudes-publications/rapports-etudes/rapports/etudes-consacrees-a-des-questions-juridiques-concernant-les-sciences-de-la-vie/la-revision-des-lois-de-bioethique" target="_blank" class="source-item">
+                <h3>Conseil d'État (2009)</h3>
+                <p>Avis sur les questions juridiques concernant les sciences de la vie</p>
+                <span class="link-text">Consulter l'avis</span>
+            </a>
+        </div>
+
+        <div class="source-section">
+            <h2>Ressources Multimédias</h2>
+            
+            <a href="https://youtu.be/4M41Fe4uvZA" target="_blank" class="source-item">
+                <h3>Vidéo Explicative</h3>
+                <p>Comprendre les enjeux de la GPA en 10 minutes</p>
+                <span class="link-text">Voir la vidéo</span>
+            </a>
+
+            <a href="https://www.franceculture.fr/emissions/les-chemins-de-la-philosophie/la-gpa-en-debat" target="_blank" class="source-item">
+                <h3>Podcast France Culture</h3>
+                <p>La GPA en débat : enjeux éthiques et juridiques</p>
+                <span class="link-text">Écouter le podcast</span>
+            </a>
+        </div>
+
+        <a href="#" class="back-to-top">Retour en haut ↑</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Script pour le retour en haut de page
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.back-to-top').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
